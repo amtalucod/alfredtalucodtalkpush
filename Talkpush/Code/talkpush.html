@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfred Talucod Talkpush</title>
+    <link rel="stylesheet" href="talkpush.css" />
+  </head>
+
+  <body>
+    <h1>Talkpush</h1>
+
+    <h2>Create a Campaign</h2>
+
+    <form action="" id="createCampaignForm">
+      <table>
+        <tr>
+          <td>
+            <label for="api_key">API Key:</label>
+            <input type="text" id="api_key" name="api_key" /><br /><br />
+
+            <label for="campaign_title">Campaign Name:</label>
+            <input
+              type="text"
+              id="campaign_title"
+              name="campaign_title"
+            /><br /><br />
+
+            <label for="job_title">Job Title:</label>
+            <input type="text" id="job_title" name="job_title" /><br /><br />
+
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" /><br /><br />
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" /><br /><br />
+
+            <label for="region">Region:</label>
+            <input type="text" id="region" name="region" /><br /><br />
+
+            <label for="postal_code">Postal Code:</label>
+            <input
+              type="text"
+              id="postal_code"
+              name="postal_code"
+            /><br /><br />
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" /><br /><br />
+          </td>
+
+          <td>
+            <br /><br />
+            <label for="short_description">Short Description:</label>
+            <input
+              type="text"
+              id="short_description"
+              name="short_description"
+            /><br /><br />
+
+            <label for="long_description">Long Description:</label>
+            <input
+              type="text"
+              id="long_description"
+              name="long_description"
+            /><br /><br />
+
+            <label for="ats_external_id">Ats External ID:</label>
+            <input
+              type="text"
+              id="ats_external_id"
+              name="ats_external_id"
+            /><br /><br />
+
+            <label for="job_type">Job Type:</label>
+            <input type="text" id="job_type" name="job_type" /><br /><br />
+
+            <label for="salary">Salary:</label>
+            <input type="text" id="salary" name="salary" /><br /><br />
+
+            <label for="salary_type">Salary Type:</label>
+            <input
+              type="text"
+              id="salary_type"
+              name="salary_type"
+            /><br /><br />
+
+            <label for="salary_currency">Currency:</label>
+            <input
+              type="text"
+              id="salary_currency"
+              name="salary_currency"
+            /><br /><br />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <div class="buttonCampaign">
+      <button onclick="createCampaign()">Submit</button>
+      <button onclick="clearButtonCampaign()">Clear</button>
+    </div>
+
+    <h2>Create a Candidate</h2>
+
+    <form action="" id="createCandidateForm">
+      <label for="api_key2">API Key:</label>
+      <input type="text" id="api_key2" name="api_key2" /><br /><br />
+      <label for="campaign_Id2">Campaign ID: </label>
+      <input type="text" id="campaign_Id2" name="campaign_Id2" /><br /><br />
+      <label for="first_name2">First Name:</label>
+      <input type="text" id="first_name2" name="first_name2" /><br /><br />
+      <label for="last_name2">Last Name:</label>
+      <input type="text" id="last_name2" name="last_name2" /><br /><br />
+      <label for="email2">Email:</label>
+      <input type="text" id="email2" name="email2" /><br /><br />
+      <label for="user_phone_number2">User Phone Number:</label>
+      <input
+        type="text"
+        id="user_phone_number2"
+        name="user_phone_number2"
+      /><br /><br />
+      <label for="source2">Source:</label>
+      <input type="text" id="source2" name="source2" /><br /><br />
+      <label for="others2">Others:</label>
+      <input type="text" id="others2" name="others2" /><br /><br />
+    </form>
+
+    <div class="buttonCandidate">
+      <button onclick="createCandidate()">Submit</button>
+      <button onclick="clearButtonCandidate()">Clear</button>
+    </div>
+
+    <h2>Retrieve Candidates</h2>
+    <form action="" id="retrieveCantidateForm">
+      <label for="api_key3">API Key:</label>
+      <input type="text" id="api_key3" name="api_key3" /><br /><br />
+      <label for="campaign_Id3">Campaign ID: </label>
+      <input type="text" id="campaign_Id3" name="campaign_Id3" /><br /><br />
+    </form>
+
+    <div class="buttonRetrieve">
+      <button onclick="retrieveCandidates()">Submit</button>
+      <button onclick="clearButtonRetrieve()">Clear</button>
+    </div>
+
+    <div class="tableCandidates">
+      <table border="1" id="candidates"></table>
+    </div>
+    <script src="talkpush.js"></script>
+  </body>
+</html>

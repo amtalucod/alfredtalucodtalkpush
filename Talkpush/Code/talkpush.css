@@ -1,0 +1,30 @@
+label {
+    display: inline-block;
+    width: 200px;
+    margin-right: 30px;
+    text-align: right;
+  }
+
+  .tableCandidates {
+    text-align: center;
+    width: 1000px;
+  }
+
+  .buttonCampaign {
+    width: 100px;
+    margin: 50 auto;
+    display: inline;
+    margin-left: 150px;
+  }
+
+  .buttonCandidate {
+    width: 100px;
+    margin: 50 auto;
+    display: inline;
+    margin-left: 150px;
+  }
+
+  .buttonRetrieve {
+    margin-left: 150px;
+    height: 50px;
+  }
